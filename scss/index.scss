@@ -1,0 +1,33 @@
+@import "style";
+@import "header";
+
+html,body, #root, .container{
+  height: 100%;
+}
+
+.container{
+  display: flex;
+
+  .left-menu{
+    flex: inherit;
+    width: 300px;
+    
+    border-right: 1px solid rgba(#000, .1);
+    box-shadow: 2px 3px 2px 5px rgba(#000, .05);
+  }  
+
+  .right-content{
+    flex: 1;
+  }
+
+  .tab-header{
+    ul>li{
+      font-size: 13px;
+    }
+    .text-main{
+      font-weight: bold;
+      margin-right: 8px;
+    }
+  }
+
+}
