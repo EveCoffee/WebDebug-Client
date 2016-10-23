@@ -1,17 +1,21 @@
 
-interface AppState{
+interface HelloProps { 
+    compiler: string; 
+    framework: string;
+ }
+
+interface AppState extends RecordProps{
     /**
      * 左侧列表的选中值
      */
-    selectedIndex?:number
-
+    selectedIndex?:number,
 }
 
 interface RecordProps{
     /**
      * 网络请求记录列表
      */
-    recordList:any;
+    recordList?:any[];
 }
 
 interface LeftListProps extends RecordProps{

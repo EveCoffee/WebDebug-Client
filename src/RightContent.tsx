@@ -20,6 +20,8 @@ export default class RightContent extends React.Component<RightContentProps, Rig
 
     renderHeaders(){
 
+        if(this.props.recordList.length === 0) return <div />;
+
         var loopHeader = (obj:any) => {
             var list:any[] = [];
 
@@ -92,6 +94,12 @@ export default class RightContent extends React.Component<RightContentProps, Rig
     }
 
     render(){
+
+        if(this.props.recordList.length === 0){
+            return <div className="right-content">
+                    
+            </div>;
+        }
         
         return <div className="right-content">
                         

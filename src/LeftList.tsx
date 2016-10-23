@@ -43,6 +43,10 @@ export default class LeftList extends React.Component<LeftListProps, LeftListSta
     renderMenuList(){
         var list:any[] = [];
 
+        console.log("渲染左侧列表记录");
+
+        console.log(this.props.recordList);
+
         this.props.recordList.forEach((record:any, index:number) => {
             list.push(
                 <ListItem 
